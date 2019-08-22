@@ -11,7 +11,7 @@ router.get("/", function (req, res) {
             });
         }
         console.log("Burgers: ", burgers); 
-        res.render("index" ,{ burgers, style: "main" }); 
+        res.render("index" ,{ burgers, style: "index" }); 
     });
 }); 
 

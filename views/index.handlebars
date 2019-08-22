@@ -3,11 +3,10 @@
     <h1>Burger App</h1>
 
     {{!-- {{> addBurger }} --}}
-
    <div class="content-burger"> 
        {{#each burgers}}
         <div class="content-burger_list" id={{id}}>
-            <img src="/public/assets/img/cheeseburger.jpg" alt="">
+            <img src=".img/cheeseburger.jpg">
             <p>{{burger_name}}</p>
             <button class="btn btn-default favorites" data-id="{{id}}" data-state="{{devoured}}">
                 {{#if devoured}} add to favorite {{else}} unfavorite {{/if}}
