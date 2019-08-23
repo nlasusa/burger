@@ -13,8 +13,9 @@ var burgerTemplate = (burgerName, id, devoured) => {
     });
 
     name.html(burgerName);
-    button.html("");
-
+    button.html('Devour it!');
+  
+    
     burgerContainer.append(img, name, button);
     return burgerContainer;
 };
@@ -52,4 +53,53 @@ $('button[type=submit]').on('click', function(event) {
     .then(displayNewBurger)
     .catch(addBurgerFail);
 });
+
+// add to devoured burgers page
+var addBurgerToDevoured = (burger) => {
+    var id = burger.id; 
+    $(`#${id}`).remove(); 
+};
+
+var addBurgerToDevouredFail = () => {
+    alert("Unable to add to devoured list");
+};
+
+$(document).on("click", '.favorites', function() {
+
+    var id = $(this).attr("data-id");
+    var value = $(this).attr("data-state"); 
+
+    let condition = value === '0' ? false : true;
+
+    $.ajax({
+        url: `/${id}/${!condition}`,
+        method: 'PUT'
+    })
+        .then(addBurgerToDevoured)
+        .catch(addBurgerToDevouredFail);
+}); 
+
+// delete a burger from list and db 
+var removeBurgerOnDelete = (burger) => {
+    var id = burger.id; 
+
+    $(`.all-burgers .burger[data-id=${id}]`).remove();
+};
+
+    var removeBurgerFailed = () => {
+        alert ("Oops, we had an issue deleting your burger!")
+    };
+
+    $(".all-burgers .burger button").on("click", function() {
+        var id = $(this).attr("data-id"); 
+
+        $.ajax({
+            url: '/delete/' + id, 
+            method: 'DELETE'
+        })
+        .then(removeBurgerOnDelete)
+        .catch(removeBurgerFailed);
+    });
+
+
 

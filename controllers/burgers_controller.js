@@ -16,6 +16,20 @@ router.get("/", function (req, res) {
     });
 }); 
 
+// get to find ALL burgers (for devoured)
+router.get('/all', (req, res) => {
+    orm.selectAll(function (error, burgers) {
+        if (error) {
+            return res.status(501).json({
+                message: "Unable to access the database"
+            });
+        }
+        res.render("allBurgers", { burgers, style: "all" }); 
+    });
+});
+
+
+
 // POST 
 router.post('/add', (req, res) => {
 
@@ -30,11 +44,44 @@ router.post('/add', (req, res) => {
         return res.json({
             burger_name: burgerName,
             id: burger.insertId,
-            devoured: 0 
+            devoured: 0
         });
     });
-
 });
+
+// router PUT 
+router.put('/:id/:value', function (req, res) {
+    var id = req.params.id; 
+    var value = JSON.parse(req.params.value);
+
+    orm.updateOne(value, id, function (error, burger) {
+        if (error) {
+            return res.status(501).json({
+                message: "Unable to devour your burger"
+            });
+        }
+        return res.json({
+            id: id 
+        });
+     });
+ });
+
+// DELETE posts 
+ router.delete("/delete/:id", (req, res) => {
+     var id = req.params.id; 
+
+     orm.deleteOne(id, function(err, burger) {
+        if (err) {
+            return res.status(501).json({
+                message: "Unable to delete burger"
+            });
+        }
+
+        return res.json({
+            id
+        });
+     });
+ });
 
 // Export routes for server.js to use.
 module.exports = router;
