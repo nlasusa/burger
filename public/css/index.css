@@ -90,17 +90,3 @@ form button {
 .fa-thumbs-up {
     color: black;
 }
-
-.content .content-burger_list2 {
-    background: #30BF51;
-    opacity: 0.9; 
-    padding: 10px;
-    height: 90px;
-    border-radius: 4px;
-    margin-top: 20px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-

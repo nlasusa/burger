@@ -29,7 +29,7 @@ var displayNewBurger = (burger) => {
     var newBurger = burgerTemplate(name, id, devoured);
 
     // adds new burger to the top 
-    $('.content-burger').prepend(newBurger);
+    $('.content-burger').append(newBurger);
     // clear the input search bar 
     $('input').val('');
 };

@@ -5,7 +5,7 @@
     <div class="new">
         <h2>My Go-To Burgers</h2>
 
-        {{#each burgers}} {{#unless devoured}}
+        {{#each burgers}} {{#if devoured}}
 
             <div class="burger" data-id="{{id}}">
             <img src="./assets/img/cb.jpg" alt="">
@@ -13,6 +13,6 @@
             <button class="btn-default" data-id="{{id}}"> Delete </button>
             </div>
 
-            {{/unless}} {{/each}}
+            {{/if}} {{/each}}
     </div>
 </div><br><br><br><br><br>
