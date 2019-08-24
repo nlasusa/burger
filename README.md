@@ -9,7 +9,7 @@ npm init, npm install express, express-handlebars, install mysql
 ## DB Setup
 schema.sql and seeds.sql
 
-## Screenshots to see how the Burger App works 
+## Demo Through Screenshots to see how the Burger App works 
 Initial mySQL db screen where I originally created the table for my burgers including id, names and devoured status 
 
 ![screenshot1](initial.png)
@@ -36,6 +36,7 @@ Another burger added to Devour Page
 If the user wants to delete a burger, it will be removed from the db. I deleted both our PB&J and Margherita burgers, which leave me with the 3 left. 
 
 ![screenshot1](img7.png)
+
 
 
 
