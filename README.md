@@ -16,17 +16,25 @@ Initial mySQL db screen where I originally created the table for my burgers incl
 
 Server listenening.. This is what the Burger App page looks like on first visit (which includes all the burgers you see in the DB screenshot above.). 
 
-![screenshot1](img1.png)
-![screenshot1](img2.png)
+![screenshot1](img1.2.png)
 
 There is a link at the top of page that displays the burgers that the user clicks "Devour It!" for. 
 
 ![screenshot1](img3.png)
 
-In this example, I chose to click the Margherita Burger, which nows displays it on the 'My Devoured' Page and not on the home page.
+In this example, I chose to click the Margherita Burger, which now displays it on the 'My Devoured' Page and not on the home page.
 
 ![screenshot1](img4.png)
 ![screenshot1](img5.png)
+
+Another burger added to Devour Page
+
+![screenshot1](img6.png)
+
+If the user wants to delete a burger, it will be removed from the db. I deleted both our PB&J and Margherita burgers, which leave me with the 3 left. 
+
+![screenshot1](img7.png)
+
 
 
 
