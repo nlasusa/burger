@@ -49,7 +49,7 @@ router.post('/add', (req, res) => {
     });
 });
 
-// router PUT 
+// PUT 
 router.put('/:id/:value', function (req, res) {
     var id = req.params.id; 
     var value = JSON.parse(req.params.value);
