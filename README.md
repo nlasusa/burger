@@ -17,7 +17,7 @@ Initial mySQL db screen where I originally created the table for my burgers incl
 Server listenening.. This is what the Burger App page looks like on first visit (which includes all the burgers you see in the DB screenshot above.). 
 
 ![screenshot1](img1.png)
-![screenshot1](img1.png)
+![screenshot1](img2.png)
 
 
 There is a link at the top of page that displays the burgers that the user clicks "Devour It!" for. 
