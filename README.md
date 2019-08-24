@@ -41,9 +41,11 @@ DB now
 ![screenshot1](img9.png)
 
 You can also add your favorite burger in the form provided and it will be appended to the end of the existing burger list!
-![screenshot1](img10.png)
 
-ENJOY!
+![screenshot1](img11.png)
+![screenshot1](img12.png)
+
+### ENJOY!
 
 
 
