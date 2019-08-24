@@ -12,7 +12,7 @@ schema.sql and seeds.sql
 ## Demo Through Screenshots to see how the Burger App works 
 Initial mySQL db screen where I originally created the table for my burgers including id, names, and devoured status 
 
-![screenshot1](initial.png)
+![screenshot1](/imagesreadme/initial.png)
 
 Server listenening.. This is what the Burger App page looks like on first visit (which includes all the burgers you see in the DB screenshot above.). 
 
