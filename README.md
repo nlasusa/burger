@@ -37,7 +37,13 @@ If the user wants to delete a burger, it will be removed from the db. I deleted 
 
 ![screenshot1](img7.png)
 
-To see Stuff Added: 
+DB now
+![screenshot1](img9.png)
+
+You can also add your favorite burger in the form provided and it will be appended to the end of the existing burger list!
+![screenshot1](img10.png)
+
+ENJOY!
 
 
 
