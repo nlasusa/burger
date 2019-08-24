@@ -10,9 +10,23 @@ npm init, npm install express, express-handlebars, install mysql
 schema.sql and seeds.sql
 
 ## Screenshots to see how the Burger App works 
-Initial mySQL db screen where I originally created the table and names for my burgers, id and devoured status 
+Initial mySQL db screen where I originally created the table for my burgers including id, names and devoured status 
+
 ![screenshot1](initial.png)
-Server listenening.. This is what the Burger App page looks like on first visit (which includes all the burgers you see in the DB screenshot above.)
+
+Server listenening.. This is what the Burger App page looks like on first visit (which includes all the burgers you see in the DB screenshot above.). 
+
 ![screenshot1](img1.png)
 ![screenshot1](img2.png)
+
+There is a link at the top of page that displays the burgers that the user clicks "Devour It!" for. 
+
+![screenshot1](img3.png)
+
+In this example, I chose to click the Margherita Burger, which nows displays it on the 'My Devoured' Page and not on the home page.
+
+![screenshot1](img4.png)
+![screenshot1](img5.png)
+
+
 
