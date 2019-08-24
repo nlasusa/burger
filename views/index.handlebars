@@ -18,13 +18,15 @@
 
     <div class="content-burger"> 
        {{#each burgers}}
+       {{#unless devoured}}
         <div class="content-burger_list" id={{id}}>
             <img src="./assets/img/cheeseburger.png" alt="">
             <p>{{burger_name}}</p>
             <button class="btn btn-default favorites" data-id="{{id}}" data-state="{{devoured}}">
-                {{#if devoured}} Devour it! {{else}} Devour it! {{/if}}
+             Devour it! 
             </button>
         </div>
+        {{/unless}}
         {{/each}}
     </div>
     
