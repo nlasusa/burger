@@ -14,7 +14,7 @@ Initial mySQL db screen where I originally created the table for my burgers incl
 
 ![screenshot1](/imagesreadme/initial.png)
 
-Server listenening.. This is what the Burger App page looks like on first visit (which includes all the burgers you see in the DB screenshot above.). 
+Server listening.. This is what the Burger App page looks like on first visit (which includes all the burgers you see in the DB screenshot above.). 
 
 ![screenshot1](/imagesreadme/img111.png)
 ![screenshot1](/imagesreadme/img222.png)
