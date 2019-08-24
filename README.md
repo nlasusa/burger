@@ -37,7 +37,7 @@ If the user wants to delete a burger, it will be removed from the db. I deleted 
 
 ![screenshot1](img7.png)
 
-
+To see Stuff Added: 
 
 
 
